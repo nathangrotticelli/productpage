@@ -1,0 +1,16 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+  <h1> Welcome to your purchase history!</h1>
+  <h2> Previous Purchase Shipping Info:</h2>
+   <li>Name: {{purchases.name	}}</li>
+  <li>Area code: {{purchases.ac	}}</li>
+  <li>Shipping Type: {{purchases.shipping	}}</li>
+  <li>State: {{purchases.state	}}</li>
+  <li>Street: {{purchases.street	}}</li>
+
+
+  <a href="/">Home</a><br><br>
+
+{% endblock %}

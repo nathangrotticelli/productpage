@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<link href="../public/stylesheets/style.css" rel="stylesheet">
+
+
+<form action="/purchaseForm" method='post'>
+	<h2>Personal Info</h2>
+	Name: <input type="text" name="name">
+	State: <input type="text" name="state">
+	Street Address: <input type="text" name="street">
+	Zip Code: <input type="text" name="ac">
+	<h2>Shipping Info</h2>
+	<input type="radio" name="shipping" value="Standard">Standard<br>
+<input type="radio" name="shipping" value="overnight">Overnight<br>
+<input type="radio" name="shipping" value="2-Day">2-Day<br>
+	<h2>Credit Card Info</h2>
+	<script src="http://creditcardjs.com/creditcardjs-quickstart.min.js"></script>
+	<h2>A field is valid when it is green.</h2>
+<input type="submit" value="Purchase">
+</form>
+
+<a href="/history">Purchase History</a><br>
+
+
+{% endblock %}
